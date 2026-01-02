@@ -1,7 +1,7 @@
 """
 Copyright start
 MIT License
-Copyright (c) 2025 Fortinet Inc
+Copyright (c) 2026 Fortinet Inc
 Copyright end
 """
 
@@ -152,6 +152,8 @@ class CustomConnector:
             ] = None,
             sourceDateFrom: Optional[str] = None,
             sourceDateTo: Optional[str] = None,
+            foundDateFrom: Optional[str] = None,
+            foundDateTo: Optional[str] = None
     ) -> dict:
         """Alerts - Get alerts list"""
         endpoint = "/public/v2/data/alerts/alerts-list"
@@ -165,6 +167,8 @@ class CustomConnector:
             "remediationStatus": ",".join(remediationStatus) if remediationStatus else None,
             "sourceDateFrom": self._convert_fsr_datetime_to_timestamp(sourceDateFrom) if sourceDateFrom else None,
             "sourceDateTo": self._convert_fsr_datetime_to_timestamp(sourceDateTo) if sourceDateTo else None,
+            "foundDateFrom": self._convert_fsr_datetime_to_timestamp(foundDateFrom) if foundDateFrom else None,
+            "foundDateTo": self._convert_fsr_datetime_to_timestamp(foundDateTo) if foundDateTo else None
         }
         return self.generic_api_call("GET", endpoint, params=params)
 

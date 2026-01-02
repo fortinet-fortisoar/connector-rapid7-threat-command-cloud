@@ -1,3 +1,3 @@
-#### Following enhancements have been made to the `Rapid7 Threat Command Cloud` Connector in version 1.1.0:
+#### Following enhancements have been made to the `Rapid7 Threat Command Cloud` Connector in version 1.1.1:
 
-- The new action `Get Alert Details` has been added.
+- `Get Alerts List` action now supports the `Found Date From` and `Found Date To` parameters.

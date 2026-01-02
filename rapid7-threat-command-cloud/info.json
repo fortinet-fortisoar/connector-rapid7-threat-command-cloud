@@ -1,13 +1,13 @@
 {
   "name": "rapid7-threat-command-cloud",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "label": "Rapid7 Threat Command Cloud",
   "description": "Rapid7 Threat Command Cloud is a digital risk protection and external threat intelligence platform that helps organizations monitor, detect, and mitigate threats originating outside their perimeters (web, deep web, dark web).",
   "publisher": "Fortinet",
   "cs_approved": false,
   "cs_compatible": true,
   "contributor": "anonyges",
-  "help_online": "https://github.com/fortinet-fortisoar/connector-rapid7-threat-command-cloud/blob/release/1.1.0/docs/readme.md",
+  "help_online": "https://github.com/fortinet-fortisoar/connector-rapid7-threat-command-cloud/blob/release/1.1.1/docs/readme.md",
   "icon_large_name": "large.png",
   "icon_small_name": "small.png",
   "category": [
@@ -73,7 +73,7 @@
     {
       "title": "Get IOCs by Filter",
       "operation": "get_iocs_by_filter",
-      "description": "Retrieve a list of IOCs from the Rapid7 Threat Command cloud server based on the Last Updated From parameter you specified.",
+      "description": "Retrieve a list of IOC's from the Rapid7 Threat Command cloud server based on the Last Updated From parameter you specified.",
       "category": "investigation",
       "annotation": "get_iocs_by_filter",
       "parameters": [
@@ -89,13 +89,13 @@
         },
         {
           "title": "Offset",
-          "description": "Specify the number of records to skip when retrieving records from Dragos SiteStore server.",
+          "description": "Specify the number of records to skip when retrieving records from rapid7 threat command cloud server.",
           "type": "integer",
           "name": "offset",
           "required": false,
           "visible": true,
           "editable": true,
-          "tooltip": "Specify the number of records to skip when retrieving records from Dragos SiteStore server."
+          "tooltip": "Specify the number of records to skip when retrieving records from rapid7 threat command cloud server."
         },
         {
           "title": "Page Size",
@@ -133,29 +133,29 @@
     {
       "title": "Add IOCs to Source",
       "operation": "add_iocs_to_source",
-      "description": "Add IOCs to the specified source in the Rapid7 Threat Command cloud server using the provided source ID and IOC value parameters.",
+      "description": "Add IOC's to the specified source in the Rapid7 Threat Command cloud server using the provided source ID and IOC value parameters.",
       "category": "investigation",
       "annotation": "add_iocs_to_source",
       "parameters": [
         {
           "title": "Source ID",
-          "description": "Specify the ID of the source based on which you want to add IOCs.",
+          "description": "Specify the ID of the source based on which you want to add IOC's.",
           "type": "text",
           "name": "sourceID",
           "required": true,
           "visible": true,
           "editable": true,
-          "tooltip": "Specify the ID of the source based on which you want to add IOCs."
+          "tooltip": "Specify the ID of the source based on which you want to add IOC's."
         },
         {
           "title": "IOCs",
-          "description": "Specify a comma-separated list of IOCs to add to the source in the Rapid7 Threat Command cloud server.",
+          "description": "Specify a comma-separated list of IOC's to add to the source in the Rapid7 Threat Command cloud server.",
           "type": "object",
           "name": "iocs",
           "required": true,
           "visible": true,
           "editable": true,
-          "tooltip": "Specify a comma-separated list of IOCs to add to the source in the Rapid7 Threat Command cloud server.",
+          "tooltip": "Specify a comma-separated list of IOC's to add to the source in the Rapid7 Threat Command cloud server.",
           "value": [
             {
               "Type": "Domains",
@@ -333,7 +333,7 @@
         },
         {
           "title": "Tags",
-          "descriptions": "Specify the tags based on which you want to filter alerts.",
+          "description": "Specify the tags based on which you want to filter alerts.",
           "type": "text",
           "name": "tags",
           "required": false,
@@ -378,6 +378,26 @@
           "visible": true,
           "editable": true,
           "tooltip": "Select a date and time to retrieve results that include only items with a source date before the specified timestamp."
+        },
+        {
+          "title": "Found Date From",
+          "description": "Select a date and time to retrieve results that include only items with a found date after the specified timestamp.",
+          "type": "datetime",
+          "name": "foundDateFrom",
+          "required": false,
+          "visible": true,
+          "editable": true,
+          "tooltip": "Select a date and time to retrieve results that include only items with a found date after the specified timestamp."
+        },
+        {
+          "title": "Found Date To",
+          "description": "Select a date and time to retrieve results that include only items with a found date before the specified timestamp.",
+          "type": "datetime",
+          "name": "foundDateTo",
+          "required": false,
+          "visible": true,
+          "editable": true,
+          "tooltip": "Select a date and time to retrieve results that include only items with a found date before the specified timestamp."
         }
       ],
       "output_schema": {}

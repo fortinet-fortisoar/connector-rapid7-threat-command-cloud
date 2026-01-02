@@ -3,7 +3,7 @@
   "data": [
     {
       "@type": "WorkflowCollection",
-      "name": "Sample - Rapid7 Threat Command Cloud - 1.1.0",
+      "name": "Sample - Rapid7 Threat Command Cloud - 1.1.1",
       "description": "Sample playbooks for \"Rapid7 Threat Command Cloud\" connector. If you are planning to use any of the sample playbooks in your environment, ensure that you clone those playbooks and move them to a different collection, since the sample playbook collection gets deleted during connector upgrade and delete.",
       "visible": true,
       "image": null,
@@ -42,7 +42,7 @@
                 "name": "Rapid7 Threat Command Cloud",
                 "config": "",
                 "params": [],
-                "version": "1.1.0",
+                "version": "1.1.1",
                 "connector": "rapid7-threat-command-cloud",
                 "operation": "get_ioc_sources",
                 "operationTitle": "Get IOC Sources"
@@ -131,7 +131,7 @@
                     "CVE-1999-002"
                   ]
                 },
-                "version": "1.1.0",
+                "version": "1.1.1",
                 "connector": "rapid7-threat-command-cloud",
                 "operation": "get_cves_by_ids",
                 "operationTitle": "Get CVEs by IDs"
@@ -225,7 +225,7 @@
                   "matchedAssetValue": "",
                   "remediationStatus": ""
                 },
-                "version": "1.1.0",
+                "version": "1.1.1",
                 "connector": "rapid7-threat-command-cloud",
                 "operation": "get_alerts_list",
                 "operationTitle": "Get Alerts List"
@@ -321,7 +321,7 @@
                   ],
                   "sourceID": ""
                 },
-                "version": "1.1.0",
+                "version": "1.1.1",
                 "connector": "rapid7-threat-command-cloud",
                 "operation": "add_iocs_to_source",
                 "operationTitle": "Add IOCs to Source"
@@ -407,7 +407,7 @@
                 "params": {
                   "iocValue": ""
                 },
-                "version": "1.1.0",
+                "version": "1.1.1",
                 "connector": "rapid7-threat-command-cloud",
                 "operation": "get_ioc_by_value",
                 "operationTitle": "Get IOC by Value"
@@ -495,7 +495,7 @@
                   "offset": "",
                   "lastUpdatedFrom": ""
                 },
-                "version": "1.1.0",
+                "version": "1.1.1",
                 "connector": "rapid7-threat-command-cloud",
                 "operation": "get_iocs_by_filter",
                 "operationTitle": "Get IOCs by Filter"
@@ -581,7 +581,7 @@
                 "params": {
                   "publishDateFrom": ""
                 },
-                "version": "1.1.0",
+                "version": "1.1.1",
                 "connector": "rapid7-threat-command-cloud",
                 "operation": "get_cves_list_from_account",
                 "operationTitle": "Get CVEs List from Account"
@@ -670,7 +670,7 @@
                   "json_data": "",
                   "api_endpoint": ""
                 },
-                "version": "1.1.0",
+                "version": "1.1.1",
                 "connector": "rapid7-threat-command-cloud",
                 "operation": "generic_api_call",
                 "operationTitle": "Execute an API Request"
@@ -757,7 +757,7 @@
                   "iocValue": "",
                   "severity": ""
                 },
-                "version": "1.1.0",
+                "version": "1.1.1",
                 "connector": "rapid7-threat-command-cloud",
                 "operation": "change_ioc_severity",
                 "operationTitle": "Change IOC Severity"
@@ -843,7 +843,7 @@
                 "params": {
                   "alertID": "1"
                 },
-                "version": "1.1.0",
+                "version": "1.1.1",
                 "connector": "rapid7-threat-command-cloud",
                 "operation": "get_alert_by_id",
                 "operationTitle": "Get Alert Details",
